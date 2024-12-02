@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+            body{
+                background-color:blueviolet;
+            }
+            form{
+                background-color:white;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                width: 650px;
+            }
+            h2{
+                background-color:black;
+                border-radius: 2px;
+                color: white;
+            }
+            h3{
+                color: white;
+            }
+
+        </style>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <br>
+        <br>
+        <br>
+        <center>
+            <form action="login" method="post">
+
+                {% csrf_token %}
+
+                <h2>USER LOGIN FORM</h2>
+
+                    User Name: <input type="text" id="uname" name="uname" placeholder="Enter User Name" required><br><br>
+                    Password: <input type="password" id="upass" name="upass" placeholder="Enter Your Password" required><br><br>
+                    <input type="submit" value="Log-IN">
+                    <br><br>
+            </form>
+
+            <div>
+                {% for message in messages %}
+                <h3>{{message}}</h3>
+                {% endfor %}
+            </div>
+        </center>
+</body>
+</html>

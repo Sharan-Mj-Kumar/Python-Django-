@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <style>
+        body{
+             background-color:blueviolet;
+        }
+        h3{
+             color: white;
+             border: 1px solid white;
+             width:28%;
+        }
+        h2{
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+<center>
+            <br>
+            <div>
+                {% for message in messages %}
+                <h2>{{message}}</h2>
+                {% endfor %}
+            </div>
+            <br>
+            <br>
+            <h3>WELCOME TO ASP TECHNOLOGIES</h3>
+</center>
+</body>
+</html>
