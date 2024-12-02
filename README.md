@@ -43,3 +43,6 @@ URL Mapping Code:-
 
 DB Connection(MySQL WorkBench) Code:-
 ![DB](DBC.png)
+
+MySQL WorkBench:-
+![sql](mysql.png)
