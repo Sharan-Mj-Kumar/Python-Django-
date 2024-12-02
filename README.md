@@ -24,3 +24,10 @@ Page Mapping are Handled with the help of GET Request
 Data Storing and Retriving process are Handled with the help of POST Request
 
 Registration Page:-
+![R1](R.png)
+
+Login Page:-
+![L1](L.png)
+
+Login-Successful Page:-
+![LS1](LS.png)
